@@ -1,0 +1,4 @@
+[
+  { "keys": ["option+k, option+l"], "command": "copy_rspec" },
+  { "keys": ["option+shift+k, option+shift+l"], "command": "copy_rspec_with_line" }
+]
