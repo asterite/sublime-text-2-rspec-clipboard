@@ -5,7 +5,7 @@ import os
 class CopyRspecWithLineCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     command = get_rspec_command(self.view)
-    line_number = self.view.rowcol(self.view.sel()[0].begin())[0] - 1
+    line_number = self.view.rowcol(self.view.sel()[0].begin())[0] + 1
     command += ":" + str(line_number)
     sublime.set_clipboard(command)
 
