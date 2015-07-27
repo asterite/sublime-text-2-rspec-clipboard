@@ -24,4 +24,4 @@ def get_rspec_command(view):
       file_name = file_name[len(folder) + 1:]
       break
 
-  return "rspec " + file_name
+  return "bundle exec rspec " + file_name
